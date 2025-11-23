@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Winter Minie";
-  src: url("/Winter Minie.woff2") format("woff2");
+  src: url("Winter Minie.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Nature";
-  src: url("/Nature Regular.woff2") format("woff2");
+  src: url("Nature Regular.woff2") format("woff2");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Nature";
-  src: url("/Nature Bold.woff2") format("woff2");
+  src: url("Nature Bold.woff2") format("woff2");
   font-weight: bold;
 }
 
@@ -120,7 +120,7 @@ section {
   position: relative;
   justify-content: left;
   height: calc(100dvh - 60px);
-  background: url(/Cookies2.jpg) center / cover no-repeat;
+  background: url(Cookies2.jpg) center / cover no-repeat;
 }
 
 .top div {
@@ -555,4 +555,5 @@ footer p {
   footer p {
     font-size: 15px;
   }
+
 }
