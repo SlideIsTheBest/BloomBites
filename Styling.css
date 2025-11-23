@@ -196,11 +196,12 @@ section {
 }
 
 .values p {
-  margin-top: 25px;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
-.values span {
+.values .span {
+  margin-top: 50px;
   font-weight: bold
 }
 
@@ -555,6 +556,4 @@ footer p {
   footer p {
     font-size: 15px;
   }
-
 }
-

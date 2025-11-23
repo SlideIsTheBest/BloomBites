@@ -17,9 +17,9 @@ const show_display = document.getElementById("show_product_display");
 
 const desc = {
   "Regular Cookies": "The classic favorite. Nutritious and packed with flavor. Perfect for a healthy snack.",
-  "Mini Cookies": "Description for Mini Cookies.",
-  "Keychain": "Description for Keychain.",
-  "Artwork": "Description for Artwork.",
+  "Mini Cookies": "Small yet fulfilling. Perfect for sharing with your friends.",
+  "Keychain": "An aesthetic keychain to show off the importance of nutrition.",
+  "Artwork": "Amazing artwork by our amazing artist. You could admire it all day.",
 }
 
 function ShowProduct(name) {
@@ -42,6 +42,4 @@ function CloseShowProduct() {
   show.classList.add("hidden");
   document.documentElement.style.overflow = "";
   document.body.style.overflow = "";
-
 }
-
