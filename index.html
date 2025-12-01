@@ -21,7 +21,7 @@
   <main>
     <section class="top">
       <div>
-        Nutritious.<br>Appetizing.<br>Cookies.
+        <p>Nutritious.<br>Appetizing.<br>Cookies.</p>
 
         <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth', block: 'start'})">Buy Now</button>
       </div>
@@ -42,7 +42,7 @@
           <p>Mini Cookies</p>
         </div>
       </div>
-      <div>
+      <div style="display: none;">
         <div class="fade_up" onclick="ShowProduct('Keychain')">
           <img src="Cookies.webp" alt="Cookies">
           <p>Keychain</p>
@@ -71,7 +71,7 @@
     <div id="show_product_display"></div>
   </div>
 
-  <script src="Home.js"></script>
   <script src="Timer.js"></script>
+  <script src="Home.js"></script>
 </body>
 </html>

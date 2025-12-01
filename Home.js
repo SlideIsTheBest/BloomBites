@@ -47,7 +47,7 @@ const show_display = document.getElementById("show_product_display");
 
 const desc = {
   "Regular Cookies": "The classic favorite. Nutritious and packed with flavor. Perfect for a healthy snack.",
-  "Mini Cookies": "Small yet fulfilling. Perfect for sharing with your friends.",
+  "Mini Cookies": "Small, yet fulfilling cookies. Perfect for sharing with your friends.",
   "Keychain": "An aesthetic keychain to show off the importance of nutrition.",
   "Artwork": "Amazing artwork by our amazing artist. You could admire it all day.",
 }
@@ -57,6 +57,7 @@ function ShowProduct(name) {
   document.documentElement.style.overflow = "hidden";
   document.body.style.overflow = "hidden";
 
+  if (preorder_allow) {
   show_display.innerHTML = `
     <img src="Cookies.webp" alt="Cookies">
     <div>
@@ -64,8 +65,17 @@ function ShowProduct(name) {
       <p>${desc[name]}</p>
       <button onclick="Preorder()">Order Now</button>
       <button id="back" onclick="CloseShowProduct()">Back <img src="Right Arrow.png"></button>
-    </div>
-  `
+    </div>`;
+  } else {
+    show_display.innerHTML = `
+    <img src="Cookies.webp" alt="Cookies">
+    <div>
+      <h1>${name}</h1>
+      <p>${desc[name]}</p>
+      <button onclick="Preorder()" disabled>Coming Soon!</button>
+      <button id="back" onclick="CloseShowProduct()">Back <img src="Right Arrow.png"></button>
+    </div>`;
+  }
 };
 
 function CloseShowProduct() {
@@ -83,5 +93,5 @@ function WhatsApp() {
 }
 
 function Instagram() {
-  location.href = "https://www.instagram.com/direct/t/17843920854617928";
+  location.href = "https://www.instagram.com/bloom._bites/";
 }
