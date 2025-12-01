@@ -72,7 +72,7 @@ function ShowProduct(name) {
     <div>
       <h1>${name}</h1>
       <p>${desc[name]}</p>
-      <button onclick="Preorder()" disabled>Coming Soon!</button>
+      <button onclick="Preorder()" style="cursor: not-allowed;" disabled>Coming Soon!</button>
       <button id="back" onclick="CloseShowProduct()">Back <img src="Right Arrow.png"></button>
     </div>`;
   }
