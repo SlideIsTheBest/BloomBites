@@ -1,6 +1,7 @@
 const timer = document.getElementById("timer");
 const timer_mobile = document.getElementById("timer_mobile");
 const preorder = document.getElementById("preorder");
+const show_preorder = document.querySelector("#show_product_display button");
 
 const start_date = new Date(2025, 11, 3, 0, 0, 0).getTime();  // Month starts with 0 (January)
 const end_date = new Date(2025, 11, 10, 23, 59, 59).getTime();  // Month starts with 0 (January)
@@ -28,11 +29,13 @@ const countdown = setInterval(() => {
       timer_mobile.innerHTML = `Opening in ${hours}h ${minutes}m ${seconds}s`; 
     }
     preorder.disabled = true;
+    show_preorder.disabled = true;
     return;
   } else if (end_diff <= 0) {
     timer.innerHTML = "Coming Soon!";
     timer_mobile.innerHTML = "Coming Soon!";
     preorder.disabled = true;
+    show_preorder.disabled = true;
     clearInterval(countdown);
     return;
   }
@@ -54,4 +57,5 @@ const countdown = setInterval(() => {
     timer.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
     timer_mobile.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   };
+
 }, 1000);
