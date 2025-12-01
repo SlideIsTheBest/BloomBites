@@ -609,7 +609,7 @@ footer p {
 
   #show_product_display {
     width: 330px;
-    height: 240px;
+    height: 220px;
   }
 
   #show_product_display h1 {
@@ -617,7 +617,8 @@ footer p {
   }
 
   #show_product_display p {
-    font-size: 12.5px;
+    height: 65%;
+    font-size: 12px;
   }
 
   #show_product_display button {
@@ -641,3 +642,4 @@ footer p {
   }
 
 }
+
