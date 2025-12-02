@@ -59,7 +59,7 @@ function ShowProduct(name) {
 
   if (preorder_allow) {
   show_display.innerHTML = `
-    <img src="Cookies.webp" alt="Cookies">
+    <img src="${name}.jpg" alt="Cookies">
     <div>
       <h1>${name}</h1>
       <p>${desc[name]}</p>
@@ -68,7 +68,7 @@ function ShowProduct(name) {
     </div>`;
   } else {
     show_display.innerHTML = `
-    <img src="Cookies.webp" alt="Cookies">
+    <img src="${name}.jpg" alt="Cookies">
     <div>
       <h1>${name}</h1>
       <p>${desc[name]}</p>
