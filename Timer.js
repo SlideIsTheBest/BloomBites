@@ -4,7 +4,7 @@ const preorder = document.getElementById("preorder");
 
 var preorder_allow = false;
 
-const start_date = new Date(2025, 11, 3, 0, 0, 0).getTime();  // Month starts with 0 (January)
+const start_date = new Date(2025, 11, 3, 12, 0, 0).getTime();  // Month starts with 0 (January)
 const end_date = new Date(2025, 11, 10, 23, 59, 59).getTime();  // Month starts with 0 (January)
 
 const countdown = setInterval(() => {
@@ -13,7 +13,7 @@ const countdown = setInterval(() => {
   const start_diff = start_date - now;
   const end_diff = end_date - now;
 
-  if (start_diff >= 0) {
+  if (start_diff > 0) {
     const days = Math.floor(start_diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((start_diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((start_diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -57,4 +57,5 @@ const countdown = setInterval(() => {
     timer.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
     timer_mobile.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   };
+
 }, 1000);
