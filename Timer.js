@@ -53,10 +53,16 @@ const countdown = setInterval(() => {
   if (days > 0) {
     timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     timer_mobile.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-  } else {
+  } else if (hours > 0) {
     timer.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
-    timer_mobile.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-  };
-
+    timer_mobile.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+  } else if (minutes > 0) {
+    timer.innerHTML = `${minutes}m ${seconds}s`;
+    timer_mobile.innerHTML = `${minutes}m ${seconds}s`;
+  } else {
+    timer.innerHTML = `${seconds}s`;
+    timer_mobile.innerHTML = `${seconds}s`;
+  }; 
+  
 }, 1000);
 
