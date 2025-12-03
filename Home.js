@@ -46,8 +46,8 @@ const show = document.getElementById("show_product");
 const show_display = document.getElementById("show_product_display");
 
 const desc = {
-  "Regular Cookies": "The classic favorite. Nutritious and packed with flavor. Perfect for a healthy snack.",
-  "Mini Cookies": "Small, yet fulfilling cookies. Perfect for sharing with your friends.",
+  "Regular Cookies": "The classic favorite. Nutritious and packed with flavor. Perfect for a healthy snack. Contains dairy, oats, and gluten.",
+  "Mini Cookies": "Small, yet fulfilling cookies. Perfect for sharing with your friends. Contains dairy, oats, and gluten.",
   "Keychain": "An aesthetic keychain to show off the importance of nutrition.",
   "Artwork": "Amazing artwork by our amazing artist. You could admire it all day.",
 }
@@ -94,4 +94,5 @@ function WhatsApp() {
 
 function Instagram() {
   location.href = "https://www.instagram.com/bloom._bites/";
+
 }
