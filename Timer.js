@@ -4,8 +4,8 @@ const preorder = document.getElementById("preorder");
 
 var preorder_allow = false;
 
-const start_date = new Date(2025, 11, 3, 12, 0, 0).getTime();  // Month starts with 0 (January)
-const end_date = new Date(2025, 11, 9, 12, 0, 0).getTime();
+const start_date = new Date(2026, 0, 1, 0, 0, 0).getTime();  // Month starts with 0 (January)
+const end_date = new Date(2026, 0, 10, 15, 0, 0).getTime();
 
 const countdown = setInterval(() => {
   const now = new Date().getTime();
@@ -13,7 +13,7 @@ const countdown = setInterval(() => {
   const start_diff = start_date - now;
   const end_diff = end_date - now;
 
-  if (start_diff > 0) {
+  if (start_diff >= 0) {
     const days = Math.floor(start_diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((start_diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((start_diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -38,7 +38,7 @@ const countdown = setInterval(() => {
     
     preorder.disabled = true;
     return;
-  } else if (end_diff < 0) {
+  } else if (end_diff <= 0) {
     timer.innerHTML = "Coming Soon!";
     timer_mobile.innerHTML = "Coming Soon!";
     preorder.disabled = true;
@@ -71,10 +71,3 @@ const countdown = setInterval(() => {
     }; 
   };
 }, 1000);
-
-
-
-
-
-
-
