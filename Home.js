@@ -85,7 +85,7 @@ function CloseShowProduct() {
 };
 
 function Preorder() {
-  location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdwnl_kyOfEeIXltYBZs7xOaLJYeECK2oA2zFIkTyDJIuvjdw/viewform?usp=header";
+  location.href = "https://forms.weavely.ai/fa963241-8bad-46fe-8f9f-0b5d8afbaa77";
 }
 
 function WhatsApp() {
@@ -94,4 +94,5 @@ function WhatsApp() {
 
 function Instagram() {
   location.href = "https://www.instagram.com/bloom._bites/";
+
 }
